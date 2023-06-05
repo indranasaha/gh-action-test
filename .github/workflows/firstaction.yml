@@ -2,10 +2,9 @@ name: first workflow
 on: workflow_dispatch
 jobs:
   first-job:
-    runs-on:
-      -self-hosted
+    runs-on: self-hosted
     steps:
-      -name:print hello
+      - name: print hello
         run: echo "hello there"
-      -name:print bye
+      - name: print bye
         run: echo "bye"
